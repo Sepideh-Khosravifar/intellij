@@ -20,11 +20,12 @@ package com.syntax.groupProjectII;
             subj2 = s2;
             subj3 = s3;
         }
+
         double getPercentage() {
+
             return (subj1 + subj2 + subj3)/300.0 * 100;
         }
     }
-
 
     class B extends Marks{
         private float subj1, subj2, subj3, subj4;
@@ -35,7 +36,9 @@ package com.syntax.groupProjectII;
             subj3 = s3;
             subj4 = s4;
         }
+
         double getPercentage() {
+
             return (subj1 + subj2 + subj3 +subj4)/400.0 * 100;
         }
     }
@@ -45,11 +48,11 @@ package com.syntax.groupProjectII;
 
         public static void main(String[] args){
 
-            A a = new A(58, 96, 82);      //creating object of class A
-            B b = new B(70, 89, 75, 64);  //creating object of class B
+            A a = new A(58, 96, 82);
+            B b = new B(70, 89, 75, 64);
 
-            double p1 = a.getPercentage();  //object of class A calling its getPercentage() function
-            double p2 = b.getPercentage();  //object of class B calling its getPercentage() function
+            double p1 = a.getPercentage();
+            double p2 = b.getPercentage();
 
             System.out.println("Percentage of student A : " + p1);
             System.out.println("Percentage of student B : " + p2);
