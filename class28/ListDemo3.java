@@ -24,7 +24,7 @@ public class ListDemo3 {
                 return s;
             }
         });*/
-        //break till 11:40;
+
         System.out.println(courses);
     }
 }

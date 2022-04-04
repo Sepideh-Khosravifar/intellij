@@ -17,11 +17,11 @@ public class Task1 {
         System.out.println(  iterator.hasNext());
         System.out.println(iterator.next()); */
 
-        /* Iterator<String> iterator =Cars.iterator();
+        /* Iterator<String> iterator =Cars.iterator(); //2nd method
         while (iterator.hasNext()) {
             System.out.println(iterator.next()); */
 
-        for (int i = 0; i < Cars.size(); i++) {
+        for (int i = 0; i < Cars.size(); i++) {         //3rd method
             System.out.println(((String) Cars.get(i)));
 
         }

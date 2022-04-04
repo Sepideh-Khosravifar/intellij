@@ -13,12 +13,13 @@ public class ListDemo4 {
         studentLinkedList.add(teyfur);
         studentLinkedList.add(gulden);
         studentLinkedList.add(emilia);
+
         System.out.println(studentLinkedList);
 
     }
 
-
 }
+
 class Student{
     public Student(String name, int age, String hobbies) {
         this.name = name;
