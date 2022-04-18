@@ -1,25 +1,29 @@
-package com.syntax.class28;
-
-//Create an arrayList of words. Remove every word that ends with “e”.
+package src.com.syntax.class28;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Task2{
-
+public class Task2 {
     public static void main(String[] args) {
+        /*
+        Create an arrayList of words. Remove every
+        word that ends with “e”.
+         */
+        ArrayList<String> arrayList=new ArrayList<>();
+        arrayList.add("Java");
+        arrayList.add("Love");
+        arrayList.add("lahore");
+        arrayList.add("cake");
 
-        ArrayList<String> Words = new ArrayList<>();
+        // arrayList.removeIf(s -> s.toLowerCase().endsWith("e"));
 
-        Words.add("telephone");
-        Words.add("tea");
-        Words.add("mercedes");
-        Words.add("candle");
-
-
-        Words.set(Words.indexOf("telephone"), "");
-        Words.set(Words.indexOf("candle"), "");
-
-        System.out.println(Words);
+        Iterator<String> iterator = arrayList.iterator();
+        while (iterator.hasNext()){
+            if(iterator.next().toLowerCase().endsWith("e")){
+                iterator.remove();
+            }
+        }
+        System.out.println(arrayList);
 
     }
 }

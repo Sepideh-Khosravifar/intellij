@@ -1,16 +1,15 @@
-package com.syntax.class28;
+package src.com.syntax.class28;
 
 import java.util.ArrayList;
 
-public class TaskIV {
+public class Task4 {
     /*
     Create an arrayList of even numbers from 1 to 500.
      Remove any number that is divisible by 5 from that arrayList.
      */
     public static void main(String[] args) {
         ArrayList<Integer> number=new ArrayList<>();
-
-        for (int i = 2; i <=500; i+=2) {
+        for (int i = 2; i <=500 ; i+=2) {
             number.add(i);
         }
 
@@ -23,5 +22,6 @@ public class TaskIV {
                 iterator.remove();
             }
         }*/
+
     }
 }

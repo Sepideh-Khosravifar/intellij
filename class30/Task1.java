@@ -1,4 +1,4 @@
-package com.syntax.class30;
+package src.com.syntax.class30;
 
 import java.util.HashMap;
 
@@ -13,7 +13,7 @@ public class Task1 {
 
         public static void main(String[] args) {
 
-            HashMap<Integer,String> bldgMap=new HashMap<>();
+            HashMap <Integer,String> bldgMap = new HashMap<>();
 
             bldgMap.put(1, "Microsoft");
             bldgMap.put(2, "Samsung");
@@ -23,19 +23,13 @@ public class Task1 {
             bldgMap.put(5, "Syntax");
             bldgMap.put(7, "Dell");
 
-            System.out.println(bldgMap.entrySet().size());   //Check how many entries you have
+            System.out.println(bldgMap.size());   //Check how many entries you have
 
+            bldgMap.replace(4, "Mazda");          //Update company on a 4th floor
+                System.out.println(bldgMap);
 
-            bldgMap.replace(4, "Mazda");                        //Update company on a 4th floor
-
-            System.out.println(bldgMap);
-
-
-            bldgMap.remove(7, "Dell");                      //Remove company on the 7th floor
-                System.out.println(bldgMap.entrySet());
-
-            System.out.println(bldgMap);
-
+            bldgMap.remove(7, "Dell");            //Remove company on the 7th floor
+                System.out.println(bldgMap);
 
         }
     }

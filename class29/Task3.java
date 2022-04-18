@@ -10,7 +10,8 @@ Create a Set of cities in which you want to make sure that insertion
 order is maintained. Then remove any city that starts with “A”;
  */
 
-            LinkedHashSet<String> cities=new LinkedHashSet<>();
+            LinkedHashSet <String> cities = new LinkedHashSet<>();
+
             cities.add("Los Angeles");
             cities.add("San Francisco");
             cities.add("New York");
@@ -20,16 +21,21 @@ order is maintained. Then remove any city that starts with “A”;
             cities.add("Arlington");
             cities.add("Oakland");
             cities.add("Boston");
+
             System.out.println(cities);
 
-            //  cities.removeIf(x -> x.startsWith("A")); // recommended
-            System.out.println(cities);
-            Iterator<String> iterator= cities.iterator();
+
+           cities.removeIf(x -> x.startsWith("A")); // 1st method recommended
+                System.out.println(cities);
+
+
+            Iterator <String> iterator = cities.iterator(); //2nd method
             while (iterator.hasNext()){
                 if(iterator.next().startsWith("A")){
                     iterator.remove();
+                    System.out.println(cities);
+
                 }
             }
-
         }
     }

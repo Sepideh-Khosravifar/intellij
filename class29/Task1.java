@@ -1,4 +1,4 @@
-package com.syntax.class29;
+package src.com.syntax.class29;
 
 public class Task1 {
     public static void main(String[] args) {

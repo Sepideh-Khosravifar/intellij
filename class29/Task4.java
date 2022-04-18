@@ -4,34 +4,40 @@ import java.util.HashSet;
 import java.util.Set;
 
     public class Task4 {
+
         public static void main(String[] args) {
+
         /*
         Create a Set collection that will hold Objects of Student Type.
-         In this set we do not care about the insertion order. Each student object should
-        have name and studentID. Display name of each student
+        In this set, we do not care about the insertion order. Each student
+        object should have name and studentID. Display name of each student
          */
-            Set<Student> students=new HashSet<>();
-            students.add(new Student("Maha","123"));
-            students.add(new Student("Habib","12345"));
-            students.add(new Student("Asel","123456"));
-            for (Student s:students
-            ) {
+
+            Set <Student> students =  new HashSet<>();
+
+            students.add(new Student("Jaleh","123"));
+            students.add(new Student("Shahla","12345"));
+            students.add(new Student("Sepideh","123456"));
+
+            for (Student s : students) {
                 s.printName();
             }
-
 
 
         }
     }
 
-    class Student{
+    class Student {
+
         String name;
         String studentId;
-        Student(String name,String studentId){
+
+        Student(String name, String studentId){
             this.name=name;
-            this.studentId=studentId;
+            this.studentId = studentId;
         }
-        void printName(){
+
+        void printName() {
             System.out.println(name);
         }
     }
